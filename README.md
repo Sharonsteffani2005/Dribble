@@ -28,35 +28,92 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ### HTML Code
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dribble</title>
+  <title>Dribble Christmas Fest</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    .navbar, .sorting-navbar, footer {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+
+    .nav-link.active {
+      font-weight: bold;
+      color: #ffc107 !important;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card-title {
+      color: #d32f2f;
+      font-weight: bold;
+    }
+
+    .contact-section {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: #ffe082;
+    }
+
+    footer {
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand text-white" href="#">Dribble</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-tree me-2"></i>Dribble Fest</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-snowman"></i> Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <nav class="sorting-navbar">
+  <!-- Sorting Nav -->
+  <nav class="sorting-navbar py-2">
     <div class="container d-flex justify-content-center">
       <ul class="nav">
         <li class="nav-item">
@@ -72,201 +129,54 @@ Publish the website in the LocalHost.
     </div>
   </nav>
 
+  <!-- Cards -->
   <div class="container my-5">
     <div class="row g-4">
       <div class="col-6 col-md-3">
         <div class="card">
-          <img src="Images/Image-1.avif" class="card-img-top" alt="Placeholder">
+          <img src="https://images.unsplash.com/photo-1608889179192-9dc33f1f1df0?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Christmas">
           <div class="card-body">
-            <h6 class="card-title">Card 1</h6>
+            <h6 class="card-title">Tree Decoration</h6>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-2.jpg" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 2</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-3.avif" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 3</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-4.jpg" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 4</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-5.jpg" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 5</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-6.avif" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 6</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-7.avif" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 7</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3">
-        <div class="card">
-          <img src="Images/Image-8.avif" class="card-img-top" alt="Placeholder">
-          <div class="card-body">
-            <h6 class="card-title">Card 8</h6>
-          </div>
-        </div>
-      </div>
+      <!-- Duplicate the card block for more cards -->
     </div>
   </div>
 
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter your email">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section container">
+    <h2><i class="fa-solid fa-envelope-open-text me-2"></i>Contact Us</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning"><i class="fa-solid fa-paper-plane me-1"></i>Send</button>
+    </form>
   </section>
 
+  <!-- Footer -->
   <footer class="text-center py-3">
-    <p>&copy; 2024 Dribble. All rights reserved.</p>
+    <p>&copy; 2024 <i class="fa-solid fa-snowflake"></i> Dribble Fest. All rights reserved.</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
-
-### CSS Code
-```css
-body {
-  background: linear-gradient(lightblue, teal);
-}
-.navbar {
-  background-color: #08C2FF;
-}
-.navbar .nav-link {
-  color: white;
-  font-weight: bold;
-  margin: 0 10px;
-}
-.navbar .nav-link:hover {
-  color: #16a085;
-}
-.sorting-navbar {
-  background-color: #006BFF;
-  color: white;
-  padding: 10px 0;
-}
-.sorting-navbar .nav-link {
-  color: white;
-  font-weight: bold;
-  margin: 0 10px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  padding: 5px 15px;
-}
-.sorting-navbar .nav-link:hover {
-  background-color: #2c3e50;
-  border-color: white;
-}
-.card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.card img {
-  height: 150px;
-  /* width: 150px; */
-  background-size: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.card-body {
-  background-color: #006BFF;
-  color: white;
-  text-align: center;
-}
-footer {
-  margin-top: 50px;
-  background-color: #08C2FF;
-  color: white;
-}
-
-.about-section {
-  background-color: #ecf0f1;
-  padding: 50px 20px;
-}
-.about-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-/* Services Section */
-.services-section {
-  background-color: #1abc9c;
-  color: white;
-  padding: 50px 20px;
-}
-.services-section h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-.service-card {
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  color: #2c3e50;
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.service-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-```
-
 ## OUTPUT:
-![alt text](Image.png)
+![image](https://github.com/user-attachments/assets/76c65d84-0054-4c3f-8efa-85ffcdd98264)
+
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
